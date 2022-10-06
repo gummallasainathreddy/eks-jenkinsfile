@@ -1,2 +1,2 @@
 FROM nginx
-cp index.html /usr/share/nginx/html
+CP index.html /usr/share/nginx/html
