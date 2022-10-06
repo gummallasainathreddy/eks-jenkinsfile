@@ -11,7 +11,7 @@ pipeline {
         }
          stage('Eks deploy') {
             steps {
-                sh 'kubectl apply -f deployment.yaml service.yaml'       
+                sh 'kubectl apply -f deployment.yaml'       
             }
         }
          stage('validation') {
