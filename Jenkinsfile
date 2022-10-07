@@ -11,7 +11,8 @@ pipeline {
         }
          stage('Eks deploy') {
             steps {
-                sh 'kubectl apply -f deployment.yaml'       
+                sh 'cd learn-terraform-provision-eks-cluster'
+                sh 'kubectl apply -f deployment.yaml'
             }
         }
          stage('validation') {
